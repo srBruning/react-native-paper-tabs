@@ -27,6 +27,7 @@ export interface SwiperRenderProps {
   showLeadingSpace?: boolean;
   uppercase: boolean;
   mode: Mode;
+  topTextStyle?: object;
 }
 
 export interface SwiperProps {
@@ -38,6 +39,7 @@ export interface SwiperProps {
   children: any;
   iconPosition?: IconPosition;
   showTextLabel?: boolean;
+  topTextStyle?: object;
   showLeadingSpace?: boolean;
   uppercase: boolean;
   mode: Mode;

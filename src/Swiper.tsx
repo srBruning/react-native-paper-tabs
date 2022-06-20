@@ -14,6 +14,7 @@ function Swiper(props: SwiperProps) {
     onChangeIndex,
     iconPosition,
     showTextLabel,
+    topTextStyle,
     showLeadingSpace,
     uppercase,
     mode,
@@ -47,6 +48,7 @@ function Swiper(props: SwiperProps) {
     showLeadingSpace,
     uppercase,
     mode,
+    topTextStyle,
   };
 
   return (

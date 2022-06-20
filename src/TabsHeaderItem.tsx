@@ -35,6 +35,7 @@ export default function TabsHeaderItem({
   mode,
   iconPosition,
   showTextLabel,
+  topTextStyle,
 }: {
   tab: ReactElement<TabScreenProps>;
   tabIndex: number;
@@ -51,6 +52,7 @@ export default function TabsHeaderItem({
   iconPosition?: IconPosition;
   showTextLabel?: boolean;
   mode: Mode;
+  topTextStyle?: object;
 }) {
   const rippleColor = React.useMemo(
     () =>
@@ -70,7 +72,7 @@ export default function TabsHeaderItem({
     tabIndex,
     childrenCount,
   });
-
+  console.log("####### topTextStyle -> " + JSON.stringify(topTextStyle));
   return (
     <View
       key={tab.props.label}
@@ -124,10 +126,10 @@ export default function TabsHeaderItem({
           {showTextLabel ? (
             <AnimatedText
               selectable={false}
-              style={[
+              style={[topTextStyle,
                 styles.text,
-                iconPosition === 'top' && styles.textTop,
-                { ...theme.fonts.medium, color, opacity },
+                iconPosition === 'top' && { ...styles.textTop, ...topTextStyle },
+                { ...theme.fonts.medium, ...topTextStyle, color, opacity },
               ]}
             >
               {uppercase ? tab.props.label.toUpperCase() : tab.props.label}

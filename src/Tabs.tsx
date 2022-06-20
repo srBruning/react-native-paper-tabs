@@ -22,6 +22,7 @@ function Tabs({
   uppercase = true,
   iconPosition = 'leading',
   showTextLabel = true,
+  topTextStyle = {},
   showLeadingSpace = true,
   disableSwipe = false,
 }: {
@@ -33,6 +34,7 @@ function Tabs({
   defaultIndex?: number;
   iconPosition?: IconPosition;
   showTextLabel?: boolean;
+  topTextStyle?: object;
   showLeadingSpace?: boolean;
   uppercase?: boolean;
   mode?: Mode;
@@ -48,7 +50,7 @@ function Tabs({
     },
     [persistKey, onChangeIndex]
   );
-
+  console.log('tabs ####### topTextStyle -> ' + JSON.stringify(topTextStyle));
   return (
     <Swiper
       style={style}
@@ -59,6 +61,7 @@ function Tabs({
       uppercase={uppercase}
       iconPosition={iconPosition}
       showTextLabel={showTextLabel}
+      topTextStyle={topTextStyle}
       showLeadingSpace={showLeadingSpace}
       mode={mode}
       disableSwipe={disableSwipe}
