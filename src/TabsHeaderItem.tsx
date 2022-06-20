@@ -54,6 +54,7 @@ export default function TabsHeaderItem({
   mode: Mode;
   topTextStyle?: object;
 }) {
+  console.log('TabsHeaderItem topTextStyle -> ' + JSON.stringify(topTextStyle));
   const rippleColor = React.useMemo(
     () =>
       Color(activeColor as any)

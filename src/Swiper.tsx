@@ -19,6 +19,7 @@ function Swiper(props: SwiperProps) {
     uppercase,
     mode,
   } = props;
+  console.log('Swiper ####### topTextStyle -> ' + JSON.stringify(topTextStyle));
   const [index, setIndex] = React.useState<number>(defaultIndex || 0);
   const goTo = React.useCallback(
     (ind: number) => {

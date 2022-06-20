@@ -31,6 +31,7 @@ export default function TabsHeader({
   uppercase,
   mode,
 }: SwiperRenderProps) {
+  console.log('TabsHeader topTextStyle -> ' + JSON.stringify(topTextStyle));
   const { colors, dark: isDarkTheme, mode: themeMode } = theme;
   const {
     backgroundColor: customBackground,
