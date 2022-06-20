@@ -238,10 +238,10 @@ const styles = StyleSheet.create({
     width: 52,
   },
   tabs: {
-    height: 48,
+    height: 40,
   },
   tabsTopIcon: {
-    height: 72,
+    height: 68,
   },
   fixedContentContainerStyle: {
     flex: 1,
