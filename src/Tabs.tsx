@@ -50,7 +50,6 @@ function Tabs({
     },
     [persistKey, onChangeIndex]
   );
-  console.log('tabs ####### topTextStyle -> ' + JSON.stringify(topTextStyle));
   return (
     <Swiper
       style={style}
