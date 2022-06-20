@@ -43,8 +43,8 @@ export default function TabsHeader({
   const backgroundColor = customBackground
     ? customBackground
     : isDarkTheme && themeMode === 'adaptive'
-      ? overlay(elevation, colors.surface)
-      : colors.primary;
+    ? overlay(elevation, colors.surface)
+    : colors.primary;
 
   let hasPrimaryBackground = colors.primary === backgroundColor;
   if (typeof dark === 'boolean') {
@@ -54,7 +54,7 @@ export default function TabsHeader({
       backgroundColor === 'transparent'
         ? false
         : // @ts-ignore
-        !color(backgroundColor).isLight();
+          !color(backgroundColor).isLight();
   }
   const textColor = isDark ? '#fff' : '#000';
   const activeColor = hasPrimaryBackground ? textColor : theme.colors.primary;

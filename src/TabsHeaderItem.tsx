@@ -72,7 +72,6 @@ export default function TabsHeaderItem({
     tabIndex,
     childrenCount,
   });
-  console.log("####### topTextStyle -> " + JSON.stringify(topTextStyle));
   return (
     <View
       key={tab.props.label}
@@ -126,9 +125,13 @@ export default function TabsHeaderItem({
           {showTextLabel ? (
             <AnimatedText
               selectable={false}
-              style={[topTextStyle,
+              style={[
+                topTextStyle,
                 styles.text,
-                iconPosition === 'top' && { ...styles.textTop, ...topTextStyle },
+                iconPosition === 'top' && {
+                  ...styles.textTop,
+                  ...topTextStyle,
+                },
                 { ...theme.fonts.medium, ...topTextStyle, color, opacity },
               ]}
             >
