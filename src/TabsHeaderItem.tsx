@@ -148,12 +148,12 @@ const styles = StyleSheet.create({
   tabRoot: { position: 'relative' },
   tabRootFixed: { flex: 1 },
   touchableRipple: {
-    height: 48,
+    height: 40,
     justifyContent: 'center',
     alignItems: 'center',
   },
   touchableRippleTop: {
-    height: 72,
+    height: 68,
   },
   touchableRippleInner: {
     flexDirection: 'row',
