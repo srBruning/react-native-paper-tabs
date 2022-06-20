@@ -51,7 +51,7 @@ function Swiper(props: SwiperProps) {
     mode,
     topTextStyle,
   };
-
+  console.log('Swiper2 ##### topTextStyle -> ' + JSON.stringify(topTextStyle));
   return (
     <View style={styles.root}>
       <TabsHeader {...renderProps} />
